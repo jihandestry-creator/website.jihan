@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jihan Destry | Portofolio</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        pastel: {
+                            pink: '#FAD4D8',   // Soft pastel pink
+                            yellow: '#FDF0CC', // Soft yellow
+                            bg: '#FCFBFA',     // Bright clean background
+                            text: '#334155'    // Soft slate text
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FCFBFA; }
+        ::-webkit-scrollbar-thumb { background: #FAD4D8; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f8b4bc; }
+        
+        body { background-color: #FCFBFA; color: #334155; overflow-x: hidden; }
+        .glass-nav {
+            background: rgba(252, 251, 250, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(250, 212, 216, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-pastel-pink selection:text-slate-900">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold tracking-tighter text-slate-800">
+                        Jihan<span class="text-pink-400">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">About</a>
+                    <a href="#experience" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Experience</a>
+                    <a href="#skills" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Skills</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-medium bg-white border border-pastel-pink text-slate-700 hover:bg-pastel-pink hover:border-transparent transition-all shadow-sm">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-screen">
+        <div class="absolute top-0 left-1/4 w-72 h-72 bg-pastel-pink rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob z-0"></div>
+        <div class="absolute top-0 right-1/4 w-72 h-72 bg-pastel-yellow rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob animation-delay-2000 z-0"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
+            <div class="mb-8 flex justify-center">
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-xl overflow-hidden relative bg-pastel-pink">
+                    <img src="WhatsApp Image 2026-10-06 at 05.22.27.jpeg" alt="Jihan Destry" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.src='https://placehold.co/400x400/FAD4D8/334155?text=Jihan+Destry';" />
+                </div>
+            </div>
+
+            <span class="inline-block py-1 px-3 rounded-full bg-white border border-pastel-yellow text-xs font-semibold tracking-wider text-slate-500 uppercase mb-6 shadow-sm">
+                Management Graduate & Professional
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6 leading-tight max-w-4xl mx-auto">
+                Hi, I'm Jihan. <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
+                    A Passionate Learner
+                </span> <br/>
+                Ready to Grow, Contribute, and Create Impact.
+            </h1>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+                <a href="#experience" class="px-8 py-3.5 rounded-full bg-pastel-pink text-slate-900 font-semibold hover:bg-pink-300 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                    View My Experience
+                </a>
+                <a href="#contact" class="px-8 py-3.5 rounded-full bg-white border-2 border-pastel-yellow text-slate-700 font-semibold hover:bg-pastel-yellow hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 md:gap-16 items-center">
+                <!-- Image Grid -->
+                <div class="w-full md:w-5/12 relative pb-8 md:pb-0">
+                    <div class="w-4/5 rounded-3xl bg-gradient-to-br from-pastel-pink to-pastel-yellow p-1 shadow-xl relative z-10 transform hover:-translate-y-1 transition-transform duration-500">
+                        <div class="w-full aspect-[3/4] bg-pastel-pink rounded-3xl overflow-hidden relative group">
+                            <!-- Gambar Terbaru -->
+                            <img src="WhatsApp Image 2026-10-06 at 05.21.05.jpeg" alt="Jihan Destry 3" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x800/FAD4D8/334155?text=Foto+Jihan+3';" />
+                        </div>
+                    </div>
+                    <div class="w-3/5 absolute -bottom-4 -right-0 md:-right-6 rounded-3xl bg-gradient-to-tr from-pastel-yellow to-pastel-pink p-1 shadow-2xl z-20 transform hover:-translate-y-1 transition-transform duration-500">
+                        <div class="w-full aspect-square bg-pastel-yellow rounded-3xl overflow-hidden relative group border-4 border-white">
+                            <!-- Gambar Tambahan -->
+                            <img src="WhatsApp Image 2026-10-06 at 05.22.26.jpeg" alt="Jihan Destry 2" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/FDF0CC/334155?text=Foto+Jihan+2';" />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-7/12 mt-6 md:mt-0">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                        <span class="w-8 h-1 bg-pastel-pink rounded-full inline-block"></span>
+                        About Me
+                    </h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-4 text-justify">
+                        Saya memiliki latar belakang pendidikan di bidang <strong>Manajemen dari Universitas Muhammadiyah Cirebon</strong>. Selama perjalanan saya, saya telah membangun pengalaman praktis di bidang kasir, administrasi transaksi, pengelolaan persediaan, hingga menjalankan bisnis online secara mandiri.
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-4 text-justify">
+                        Saya terbiasa dengan pencatatan keuangan yang teliti, memberikan pelayanan pelanggan yang prima, serta berkoordinasi secara efektif dalam tim. Keaktifan saya dalam organisasi dan program magang telah melatih kemampuan komunikasi, kepemimpinan, dan manajemen waktu saya.
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed font-medium">
+                        Saat ini, saya sangat tertarik untuk membangun karier di bidang keuangan, khususnya pada peran administrasi keuangan, pengelolaan kas, dan layanan pelanggan, di mana saya dapat memberikan kontribusi positif.
+                    </p>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-pastel-bg rounded-2xl border border-slate-100 shadow-sm">
+                            <i class="fa-solid fa-graduation-cap text-pink-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-slate-800">Pendidikan</h4>
+                            <p class="text-sm text-slate-500">S1 Manajemen (UMC)</p>
+                        </div>
+                        <div class="p-4 bg-pastel-bg rounded-2xl border border-slate-100 shadow-sm">
+                            <i class="fa-solid fa-certificate text-yellow-500 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-slate-800">Sertifikasi</h4>
+                            <p class="text-sm text-slate-500">BNSP (Ms. Office) & Brevet A/B</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 relative bg-slate-50 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 inline-block relative">
+                    Experience & Projects
+                    <span class="absolute -bottom-2 left-0 w-1/2 h-1 bg-pastel-yellow rounded-full"></span>
+                </h2>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto">Perjalanan profesional saya mencakup pelayanan pelanggan, operasional bisnis, administrasi, hingga kreasi konten.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card: Bank BSI -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-yellow-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-yellow-50 rounded-2xl flex items-center justify-center text-yellow-500">
+                            <i class="fa-solid fa-building-columns text-xl"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Oct - Dec 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Magang Administrasi</h3>
+                    <h4 class="text-sm font-medium text-yellow-500 mb-4">Bank Syariah Indonesia</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Input data & verifikasi dokumen transaksi ke sistem perusahaan.</li>
+                        <li>Pengarsipan dokumen fisik/digital secara sistematis.</li>
+                        <li>Membantu operasional teller & customer service.</li>
+                    </ul>
+                </div>
+
+                <!-- Card: Photolookup -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-pink-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-pink-50 rounded-2xl flex items-center justify-center text-pink-400">
+                            <i class="fa-solid fa-camera text-xl"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Oct 2024 - Aug 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Cashier & Operator</h3>
+                    <h4 class="text-sm font-medium text-pink-400 mb-4">Photolookup Cirebon</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Mengelola transaksi pelanggan (tunai/non-tunai) akurat.</li>
+                        <li>Memastikan kelancaran mesin foto box.</li>
+                        <li>Mengelola persediaan kertas foto dan tinta operasional.</li>
+                    </ul>
+                </div>
+
+                <!-- Card: GirlsUp Community -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-yellow-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-yellow-50 rounded-2xl flex items-center justify-center text-yellow-500">
+                            <i class="fa-solid fa-video text-xl"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Feb 2025 - Present</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Content Creator</h3>
+                    <h4 class="text-sm font-medium text-yellow-500 mb-4">GirlsUp Community</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Produksi video ulasan produk kecantikan persuasif.</li>
+                        <li>Video editing sesuai estetika & tone panduan brand.</li>
+                        <li>Interpretasi pesan utama (USP) produk ke visual.</li>
+                    </ul>
+                </div>
+
+                <!-- Card: By.JDA -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-pink-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-pink-50 rounded-2xl flex items-center justify-center text-pink-400">
+                            <i class="fa-solid fa-store text-xl"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Jan 2022 - Present</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Small Business Owner</h3>
+                    <h4 class="text-sm font-medium text-pink-400 mb-4">By.JDA (Freelance)</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Mengelola bisnis sistem Pre-Order (PO).</li>
+                        <li>Memproduksi barang custom sesuai spesifikasi pelanggan.</li>
+                        <li>Administrasi rekapitulasi pesanan secara terstruktur.</li>
+                    </ul>
+                </div>
+
+                <!-- Card: Lab Kewirausahaan -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-yellow-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-yellow-50 rounded-2xl flex items-center justify-center text-yellow-500">
+                            <i class="fa-solid fa-boxes-stacked text-xl"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Dec 2023 - Dec 2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Ketua Divisi Persediaan</h3>
+                    <h4 class="text-sm font-medium text-yellow-500 mb-4">Lab Kewirausahaan UMC</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Stok opname rutin meminimalisir selisih persediaan.</li>
+                        <li>Koordinasi pengadaan barang dengan divisi pembelian.</li>
+                        <li>Pencatatan transaksi dan pelaporan stok berkala.</li>
+                    </ul>
+                </div>
+                
+                <!-- Card: Prime Bread -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-pink-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-pink-50 rounded-2xl flex items-center justify-center text-pink-400">
+                            <i class="fa-solid fa-bread-slice text-xl"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Mar 2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">SPG Event</h3>
+                    <h4 class="text-sm font-medium text-pink-400 mb-4">Prime Bread Cirebon</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Menata display produk mengoptimalkan daya tarik booth.</li>
+                        <li>Menawarkan produk aktif untuk capai target penjualan.</li>
+                        <li>Merekap laporan persediaan barang harian.</li>
+                    </ul>
+                </div>
+
+                <!-- Card: R&K Cafe -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-yellow-300 md:col-span-2 lg:col-span-3 lg:w-1/3 lg:mx-auto">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-yellow-50 rounded-2xl flex items-center justify-center text-yellow-500">
+                            <i class="fa-solid fa-mug-hot text-xl"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Mar - Apr 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Cashier & Waiters</h3>
+                    <h4 class="text-sm font-medium text-yellow-500 mb-4">R&K Cafe Cirebon</h4>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Melayani pelanggan secara ramah dan profesional.</li>
+                        <li>Transaksi kasir (tunai/non-tunai) cepat dan akurat.</li>
+                        <li>Membantu pengelolaan stok dan inventaris bahan.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">My Skills</h2>
+            <p class="text-slate-500 mb-10 max-w-xl mx-auto">Kombinasi keahlian teknis dan interpersonal yang saya asah melalui pendidikan, organisasi, dan pengalaman kerja.</p>
+            
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="px-5 py-2.5 bg-pink-50 border border-pink-100 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Pencatatan Keuangan</span>
+                <span class="px-5 py-2.5 bg-yellow-50 border border-yellow-100 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Administrasi Transaksi</span>
+                <span class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Pelayanan Pelanggan (CS)</span>
+                <span class="px-5 py-2.5 bg-pink-50 border border-pink-100 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Microsoft Office (BNSP)</span>
+                <span class="px-5 py-2.5 bg-yellow-50 border border-yellow-100 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Brevet Pajak A & B</span>
+                <span class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Manajemen Persediaan</span>
+                <span class="px-5 py-2.5 bg-pink-50 border border-pink-100 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Operasional Kasir</span>
+                <span class="px-5 py-2.5 bg-yellow-50 border border-yellow-100 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Content Creation</span>
+                <span class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Komunikasi & Koordinasi</span>
+                <span class="px-5 py-2.5 bg-pink-50 border border-pink-100 text-slate-700 rounded-full font-medium shadow-sm hover:-translate-y-0.5 transition-all cursor-default">Manajemen Waktu</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-pastel-pink/20 relative border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-white rounded-3xl p-10 shadow-lg border border-pink-100 relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 w-32 h-32 bg-pastel-yellow rounded-full mix-blend-multiply opacity-50 blur-xl"></div>
+                <div class="absolute -left-10 -bottom-10 w-32 h-32 bg-pastel-pink rounded-full mix-blend-multiply opacity-50 blur-xl"></div>
+                
+                <h2 class="text-3xl font-bold text-slate-900 mb-6 relative z-10">Let's Work Together</h2>
+                <p class="text-slate-600 mb-10 max-w-lg mx-auto relative z-10">
+                    Tertarik untuk berdiskusi lebih lanjut mengenai peluang kerja di bidang administrasi, keuangan, atau layanan pelanggan? Mari terhubung!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 relative z-10">
+                    <a href="mailto:jihandestrya@gmail.com" class="flex items-center gap-3 px-6 py-3 bg-slate-50 hover:bg-pink-50 rounded-2xl transition-colors border border-slate-200 w-full sm:w-auto justify-center group">
+                        <i class="fa-solid fa-envelope text-pink-400 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-slate-700 font-medium">jihandestrya@gmail.com</span>
+                    </a>
+                    <a href="tel:085797196422" class="flex items-center gap-3 px-6 py-3 bg-slate-50 hover:bg-yellow-50 rounded-2xl transition-colors border border-slate-200 w-full sm:w-auto justify-center group">
+                        <i class="fa-solid fa-phone text-yellow-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-slate-700 font-medium">0857-9719-6422</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jihan-destry-01983a30b" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-slate-50 hover:bg-blue-50 rounded-2xl transition-colors border border-slate-200 w-full sm:w-auto justify-center group">
+                        <i class="fa-brands fa-linkedin text-blue-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-slate-700 font-medium">LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-8 text-center border-t border-slate-100">
+        <p class="text-sm text-slate-400 font-medium">
+            &copy; 2026 Jihan Destry Adhiyanti. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
